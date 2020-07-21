@@ -1,5 +1,6 @@
 Feature: Login functionality
 
+@MobileTest
 Scenario: Default login
 
 Given User is on landing page
@@ -10,7 +11,7 @@ And click on login buclick on login buttontton
 
 Then The user successfully login into application "true"
 
-
+@SanityTest
 Scenario: Negative login
 
 Given User is on landing page
@@ -21,7 +22,7 @@ And click on login buclick on login buttontton
 
 Then The user successfully  login into application "false"
 
-
+@SmokeTest
 Scenario: Signup Functionality
 
 Given User is signup page
