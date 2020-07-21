@@ -1,5 +1,11 @@
 Feature: Login functionality
 
+Background:
+Given validate the browser
+When Browser is triggered
+Then check if browser is started
+
+@RegTest
 Scenario: Default login
 
 Given User is on landing page
@@ -21,7 +27,7 @@ And click on login buclick on login buttontton
 
 Then The user successfully  login into application "false"
 
-
+@SmokeTest
 Scenario: Signup Functionality
 
 Given User is signup page
