@@ -1,11 +1,15 @@
 Feature: Login functionality
 
+<<<<<<< HEAD
 Background:
 Given validate the browser
 When Browser is triggered
 Then check if browser is started
 
 @RegTest
+=======
+@MobileTest
+>>>>>>> 0578c9272d1080e1655fabd255708cf08ac60b3e
 Scenario: Default login
 
 Given User is on landing page
@@ -16,7 +20,7 @@ And click on login buclick on login buttontton
 
 Then The user successfully login into application "true"
 
-
+@SanityTest
 Scenario: Negative login
 
 Given User is on landing page
